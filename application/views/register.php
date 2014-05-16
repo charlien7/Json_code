@@ -29,21 +29,23 @@
     </div>
     <div class="row">
         <div class="columns">
-                                <p><?php if (isset($msg)) {
-                                    echo $msg;
-                                }   ?> </p>
+ <p></p>
                                 <span class="pln">
                         </span><?php echo validation_errors(); ?><span class="pln">
-                        </span><?php echo form_open('login');?><span class="pln">
+                        </span><?php echo form_open('register');?><span class="pln">
+                        </span><label><span class="typ">Nombre</span></label><br><span class="pln">
+                        </span><input id="username" name="name" type="text"><br><br><span class="pln">
                         </span><label><span class="typ">Email</span></label><br><span class="pln">
-                        </span><input id="username" name="username" type="text"><br><br><span class="pln">
+                        </span><input id="username" name="email" type="text"><br><br><span class="pln">
                         </span><label><span class="typ">Password</span></label><br><span class="pln">
                         </span><input id="password" name="password" type="password"><span class="pln">
+                    </span><label><span class="typ">Confirmar Password</span></label><br><span class="pln">
+                        </span><input id="password" name="confirm" type="password"><span class="pln">
                         </span><br><br><span class="pln">
                         </span><input value="Enviar" type="submit" class="button expand"><span class="pln">
                         </span><?php echo form_close();?><span class="pln">
 
-                    </span><a href="login/registro" class="button expand">Registrarse</a><span class="pln">
+                    </span><span class="pln">
 
                         
                         
@@ -57,6 +59,10 @@
                         
                     </span>
 
+
+
+
+           
 
         </div>
     </div>

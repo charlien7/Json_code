@@ -36,6 +36,10 @@ class login_model extends CI_Model
             }
            
         }
+        function insert_user($data)
+    {
+        $this->db->insert('usuarios', $data); 
+    }
        
        
        
